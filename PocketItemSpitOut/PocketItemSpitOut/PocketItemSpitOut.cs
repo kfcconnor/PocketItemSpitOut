@@ -24,6 +24,7 @@ namespace PocketItemSpitOut
             Server.RoundStarted += eHandler.onRoundStart;
             Server.RoundEnded += eHandler.onRoundEnd;
             player.FailingEscapePocketDimension += eHandler.PocketDeath;
+            Log.Info("PocketItemSpitOut V1.0.0 'Larry's Snack Machine' has loaded successfully");
         }
 
         public override void OnDisabled()
