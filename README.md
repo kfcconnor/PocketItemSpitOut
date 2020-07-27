@@ -1,5 +1,5 @@
 # PocketItemSpitOut
- An Exiled V2 Plug in that allows items dropped by dead people within larry's pocket dimension to be randomly dropped within the facility
+ An Exiled V2 Plugin that allows items dropped by dead people within larry's pocket dimension to be randomly dropped within the facility
 ## Installation
 Place the PocketItemSpitOut.dll into your Exiled/Plugins Folder and the mod will start next time you launch the server
 ## Config
