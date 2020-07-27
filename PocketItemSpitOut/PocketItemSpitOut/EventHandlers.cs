@@ -138,7 +138,7 @@ namespace PocketItemSpitOut
                             Log.Debug("Selected Item is " + itemsDropped[sItem].ToString());
 
                         UnityEngine.Vector3 Spawnlocation = ValidRooms[sRoom].Position;
-                        Item.Spawn(itemsDropped[sItem], 1, Spawnlocation);
+                        Item.Spawn(itemsDropped[sItem], 100, Spawnlocation);
                         if (Config.debug)
                             Log.Debug("Item Spawned");
                         itemsDropped.RemoveAt(sItem);
