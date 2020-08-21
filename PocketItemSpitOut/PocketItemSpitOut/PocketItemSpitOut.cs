@@ -12,6 +12,7 @@ namespace PocketItemSpitOut
     using Exiled.Events.EventArgs;
     using Server = Exiled.Events.Handlers.Server;
     using player = Exiled.Events.Handlers.Player;
+    using larry = Exiled.Events.Handlers.Scp106;
 
     public class PocketItemSpitOut : Plugin<config>
     {
@@ -23,8 +24,10 @@ namespace PocketItemSpitOut
             eHandler = new EventHandlers(this);
             Server.RoundStarted += eHandler.onRoundStart;
             Server.RoundEnded += eHandler.onRoundEnd;
+            Server.SendingRemoteAdminCommand += eHandler.OnCommand;
             player.FailingEscapePocketDimension += eHandler.PocketDeath;
-            Log.Info("PocketItemSpitOut V1.0.1 'Larry's Snack Machine' has loaded successfully");
+            larry.Containing += eHandler.larryRecontained;
+            Log.Info("PocketItemSpitOut V1.1.0 'Larry's Snack Machine' has loaded successfully");
         }
 
         public override void OnDisabled()

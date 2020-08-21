@@ -14,9 +14,11 @@ namespace PocketItemSpitOut
         public bool IsEnabled { get; set; } = true;
         public bool debug { get; set; } = false;
         public bool allowTesla { get; set; } = false;
+        public bool allowDropOnLarryDeath { get; set; } = false;
         public int minTimeForDrop { get; set; } = 10;
         public int maxTimeForDrop { get; set; } = 25;
         public int chanceForDrop { get; set; } = 75;
+        public int itemsDroppedOnLarryDeath { get; set; } = 10;
     }
 }
 
